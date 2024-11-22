@@ -1,92 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Cron Expression Generator & Parser | Cron表达式生成器和解析器</title>
 
-    <meta charset="utf-8" />
-    <!-- Primary Meta Tags -->
-    <meta
-      name="description"
-      content="Online Cron Expression Generator and Parser. Create, validate and explain cron expressions easily. Support for multiple formats including Crontab, Quartz, Spring | 在线Cron表达式生成器和解析器。轻松创建、验证和解释cron表达式。支持多种格式，包括Crontab、Quartz、Spring"
-    />
-    <meta
-      name="keywords"
-      content="cron,crontab,quartz,spring,scheduler,generator,parser,在线工具,表达式生成器,解析器"
-    />
-    <meta name="author" content="CDTools" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta
-      name="viewport"
-      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width<% if (ctx.mode.cordova || ctx.mode.capacitor) { %>, viewport-fit=cover<% } %>"
-    />
+<head>
+  <title>Cron Expression Generator & Parser | Cron表达式生成器和解析器</title>
 
-    <!-- Language Alternates -->
-    <link rel="alternate" hreflang="en" href="https://cron.cdtools.click/en" />
-    <link rel="alternate" hreflang="zh" href="https://cron.cdtools.click/zh" />
-    <link rel="canonical" href="https://cron.cdtools.click" />
+  <meta charset="utf-8" />
+  <!-- Primary Meta Tags -->
+  <meta name="description" content="Online Cron Expression Generator and Parser. Create, validate and explain cron expressions easily. Support for multiple formats including Crontab, Quartz, Spring | 在线Cron表达式生成器和解析器。轻松创建、验证和解释cron表达式。支持多种格式，包括Crontab、Quartz、Spring" />
+  <meta name="keywords" content="cron,crontab,quartz,spring,scheduler,generator,parser,在线工具,表达式生成器,解析器" />
+  <meta name="author" content="CDTools" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width<% if (ctx.mode.cordova || ctx.mode.capacitor) { %>, viewport-fit=cover<% } %>" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://cron.cdtools.click" />
-    <meta
-      property="og:title"
-      content="Cron Expression Generator & Parser | Cron表达式生成器和解析器"
-    />
-    <meta
-      property="og:description"
-      content="Online Cron Expression Generator and Parser. Create, validate and explain cron expressions easily. Support for multiple formats including Crontab, Quartz, Spring | 在线Cron表达式生成器和解析器"
-    />
-    <meta
-      property="og:image"
-      content="https://cron.cdtools.click/icons/favicon-128x128.png"
-    />
+  <!-- Language Alternates -->
+  <link rel="alternate" hreflang="en" href="https://cron.cdtools.click/en" />
+  <link rel="alternate" hreflang="zh" href="https://cron.cdtools.click/zh" />
+  <link rel="canonical" href="https://cron.cdtools.click" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary" />
-    <meta property="twitter:url" content="https://cron.cdtools.click" />
-    <meta
-      property="twitter:title"
-      content="Cron Expression Generator & Parser | Cron表达式生成器和解析器"
-    />
-    <meta
-      property="twitter:description"
-      content="Online Cron Expression Generator and Parser. Create, validate and explain cron expressions easily | 在线Cron表达式生成器和解析器"
-    />
-    <meta
-      property="twitter:image"
-      content="https://cron.cdtools.click/icons/favicon-128x128.png"
-    />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cron.cdtools.click" />
+  <meta property="og:title" content="Cron Expression Generator & Parser | Cron表达式生成器和解析器" />
+  <meta property="og:description" content="Online Cron Expression Generator and Parser. Create, validate and explain cron expressions easily. Support for multiple formats including Crontab, Quartz, Spring | 在线Cron表达式生成器和解析器" />
+  <meta property="og:image" content="https://cron.cdtools.click/icons/favicon-128x128.png" />
 
-    <!-- Icons -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="128x128"
-      href="icons/favicon-128x128.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="icons/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="icons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="icons/favicon-16x16.png"
-    />
-    <link rel="icon" type="image/ico" href="favicon.ico" />
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:url" content="https://cron.cdtools.click" />
+  <meta property="twitter:title" content="Cron Expression Generator & Parser | Cron表达式生成器和解析器" />
+  <meta property="twitter:description" content="Online Cron Expression Generator and Parser. Create, validate and explain cron expressions easily | 在线Cron表达式生成器和解析器" />
+  <meta property="twitter:image" content="https://cron.cdtools.click/icons/favicon-128x128.png" />
 
-    <!-- Structured Data -->
-    <script type="application/ld+json">
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="128x128" href="icons/favicon-128x128.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+  <link rel="icon" type="image/ico" href="favicon.ico" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebApplication",
@@ -103,30 +57,25 @@
         }
       }
     </script>
-    <script
-      charset="UTF-8"
-      id="LA_COLLECT"
-      src="//sdk.51.la/js-sdk-pro.min.js"
-    ></script>
-    <script>
-      LA.init({ id: "3KHNju0NS6KdmK8g", ck: "3KHNju0NS6KdmK8g" });
-    </script>
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3594081485685271"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      var _hmt = _hmt || [];
-      (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?7fdd626d87b4c2ab5afee04e5fcd0b9d";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-      })();
-    </script>
-  </head>
-  <body>
-    <!-- quasar:entry-point -->
-  </body>
+  <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+  <script>
+    LA.init({ id: "3KHNju0NS6KdmK8g", ck: "3KHNju0NS6KdmK8g" });
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3594081485685271" crossorigin="anonymous"></script>
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?7fdd626d87b4c2ab5afee04e5fcd0b9d";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- quasar:entry-point -->
+  <script src="https://link.cdtools.click/link.js"></script>
+</body>
+
 </html>
